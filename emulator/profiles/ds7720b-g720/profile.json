@@ -1,0 +1,76 @@
+{
+  "profile_id": "ds7720b-g720-181.5-fos10.0",
+  "evidence_classification": {
+    "routes_and_field_names": "DOCUMENTED",
+    "model_and_port_layout": "DOCUMENT-VALIDATED WITH REVISION INTERPRETATION",
+    "wwns_serials_names_and_measurements": "SYNTHETIC VALUE",
+    "physical_payload_conformance": "REQUIRES REAL HARDWARE VALIDATION"
+  },
+  "identity": {
+    "vendor": "Dell Technologies / Brocade",
+    "product": "Connectrix DS-7720B / Brocade G720",
+    "switch_type": "181.5",
+    "firmware_version": "v10.0.1",
+    "switch_name": "emu-g720-a",
+    "chassis_name": "emu-g720-chassis-a",
+    "switch_wwn": "10:00:00:27:f8:72:00:01",
+    "chassis_wwn": "20:00:00:27:f8:72:00:01",
+    "port_wwn_prefix": "21:00:00:27:f8:72",
+    "serial_number": "EMU-G720-0001",
+    "domain_id": 7,
+    "fcid": "0x070000",
+    "vf_id": -1,
+    "is_principal": false
+  },
+  "fabric": {
+    "name": "emu-mixed-fabric-a",
+    "peer_isl_port": "0/48",
+    "peer_switch": {
+      "name": "10:00:00:27:f8:62:00:01",
+      "switch-user-friendly-name": "emu-g620-a",
+      "chassis-wwn": "20:00:00:27:f8:62:00:01",
+      "chassis-user-friendly-name": "emu-g620-chassis-a",
+      "domain-id": 6,
+      "is-principal": true,
+      "principal": true,
+      "fcid-hex": "0x060000",
+      "firmware-version": "v9.2.2c1",
+      "switch-model": "162.0",
+      "serial-number": "EMU-G620-0001"
+    }
+  },
+  "port_layout": {
+    "logical_port_count": 64,
+    "licensed_ranges": ["0-31", "48-49"],
+    "media_ranges": [
+      {"ranges": ["0-47"], "type": "sfp+"},
+      {"ranges": ["48-63"], "type": "sfp-dd"}
+    ],
+    "default_speed_gbps": 64,
+    "host_port": 0,
+    "storage_port": 1,
+    "isl_port": 48,
+    "fault_port": 1,
+    "optic_port": 0
+  },
+  "components": {
+    "power_supplies": [
+      {"unit-number": 1, "serial-number": "EMU-G720-PSU1", "part-number": "EMU-PSU-350W-G720", "power-production": 142, "power-source": "ac", "operational-state": "ok", "airflow-direction": "nonportside-intake", "input-voltage": 230, "temperature": 33, "power-usage": 142},
+      {"unit-number": 2, "serial-number": "EMU-G720-PSU2", "part-number": "EMU-PSU-350W-G720", "power-production": 139, "power-source": "ac", "operational-state": "ok", "airflow-direction": "nonportside-intake", "input-voltage": 230, "temperature": 32, "power-usage": 139}
+    ],
+    "fans": [
+      {"unit-number": 1, "serial-number": "EMU-G720-FAN1", "part-number": "EMU-FAN-G720", "operational-state": "ok", "speed": 8100, "airflow-direction": "nonportside-intake", "power-consumption": 20},
+      {"unit-number": 2, "serial-number": "EMU-G720-FAN2", "part-number": "EMU-FAN-G720", "operational-state": "ok", "speed": 8050, "airflow-direction": "nonportside-intake", "power-consumption": 20},
+      {"unit-number": 3, "serial-number": "EMU-G720-FAN3", "part-number": "EMU-FAN-G720", "operational-state": "ok", "speed": 8150, "airflow-direction": "nonportside-intake", "power-consumption": 20}
+    ],
+    "sensors": [
+      {"id": 1, "slot-number": 0, "index": 1, "state": "in-range", "category": "temperature", "temperature": 38, "temperature-fahrenheit": 100},
+      {"id": 2, "slot-number": 0, "index": 2, "state": "in-range", "category": "temperature", "temperature": 41, "temperature-fahrenheit": 106}
+    ],
+    "system_resources": {"cpu-usage": 22, "memory-usage": 47, "total-memory": 8192, "flash-usage": 29, "free-kernel-memory": 2048}
+  },
+  "endpoints": {
+    "host": {"name": "emu-esxi-g720-a", "node_wwn": "20:00:00:00:00:72:10:01", "port_wwn": "21:00:00:00:00:72:10:01"},
+    "storage": {"name": "emu-array-g720-a", "node_wwn": "50:00:00:00:00:72:20:01", "port_wwn": "51:00:00:00:00:72:20:01"}
+  }
+}

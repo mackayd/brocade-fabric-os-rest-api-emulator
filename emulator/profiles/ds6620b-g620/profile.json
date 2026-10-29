@@ -1,0 +1,75 @@
+{
+  "profile_id": "ds6620b-g620-162.0-fos9.2",
+  "evidence_classification": {
+    "routes_and_field_names": "DOCUMENTED",
+    "model_and_port_layout": "DOCUMENT-VALIDATED",
+    "wwns_serials_names_and_measurements": "SYNTHETIC VALUE",
+    "physical_payload_conformance": "REQUIRES REAL HARDWARE VALIDATION"
+  },
+  "identity": {
+    "vendor": "Dell Technologies / Brocade",
+    "product": "Connectrix DS-6620B / Brocade G620",
+    "switch_type": "162.0",
+    "firmware_version": "v9.2.2c1",
+    "switch_name": "emu-g620-a",
+    "chassis_name": "emu-g620-chassis-a",
+    "switch_wwn": "10:00:00:27:f8:62:00:01",
+    "chassis_wwn": "20:00:00:27:f8:62:00:01",
+    "port_wwn_prefix": "21:00:00:27:f8:62",
+    "serial_number": "EMU-G620-0001",
+    "domain_id": 6,
+    "fcid": "0x060000",
+    "vf_id": -1,
+    "is_principal": true
+  },
+  "fabric": {
+    "name": "emu-mixed-fabric-a",
+    "peer_isl_port": "0/48",
+    "peer_switch": {
+      "name": "10:00:00:27:f8:72:00:01",
+      "switch-user-friendly-name": "emu-g720-a",
+      "chassis-wwn": "20:00:00:27:f8:72:00:01",
+      "chassis-user-friendly-name": "emu-g720-chassis-a",
+      "domain-id": 7,
+      "is-principal": false,
+      "principal": false,
+      "fcid-hex": "0x070000",
+      "firmware-version": "v10.0.1",
+      "switch-model": "181.5",
+      "serial-number": "EMU-G720-0001"
+    }
+  },
+  "port_layout": {
+    "logical_port_count": 64,
+    "licensed_ranges": ["0-31", "48-51"],
+    "media_ranges": [
+      {"ranges": ["0-47"], "type": "sfp+"},
+      {"ranges": ["48-63"], "type": "qsfp"}
+    ],
+    "default_speed_gbps": 32,
+    "host_port": 0,
+    "storage_port": 1,
+    "isl_port": 48,
+    "fault_port": 1,
+    "optic_port": 0
+  },
+  "components": {
+    "power_supplies": [
+      {"unit-number": 1, "serial-number": "EMU-G620-PSU1", "part-number": "EMU-PSU-G620", "power-production": 108, "power-source": "ac", "operational-state": "ok", "airflow-direction": "nonportside-intake", "input-voltage": 230, "temperature": 32, "power-usage": 108},
+      {"unit-number": 2, "serial-number": "EMU-G620-PSU2", "part-number": "EMU-PSU-G620", "power-production": 105, "power-source": "ac", "operational-state": "ok", "airflow-direction": "nonportside-intake", "input-voltage": 230, "temperature": 31, "power-usage": 105}
+    ],
+    "fans": [
+      {"unit-number": 1, "serial-number": "EMU-G620-FAN1", "part-number": "EMU-FAN-G620", "operational-state": "ok", "speed": 7200, "airflow-direction": "nonportside-intake", "power-consumption": 18},
+      {"unit-number": 2, "serial-number": "EMU-G620-FAN2", "part-number": "EMU-FAN-G620", "operational-state": "ok", "speed": 7100, "airflow-direction": "nonportside-intake", "power-consumption": 18}
+    ],
+    "sensors": [
+      {"id": 1, "slot-number": 0, "index": 1, "state": "in-range", "category": "temperature", "temperature": 36, "temperature-fahrenheit": 97},
+      {"id": 2, "slot-number": 0, "index": 2, "state": "in-range", "category": "temperature", "temperature": 39, "temperature-fahrenheit": 102}
+    ],
+    "system_resources": {"cpu-usage": 18, "memory-usage": 42, "total-memory": 4096, "flash-usage": 31, "free-kernel-memory": 1024}
+  },
+  "endpoints": {
+    "host": {"name": "emu-esxi-g620-a", "node_wwn": "20:00:00:00:00:62:10:01", "port_wwn": "21:00:00:00:00:62:10:01"},
+    "storage": {"name": "emu-array-g620-a", "node_wwn": "50:00:00:00:00:62:20:01", "port_wwn": "51:00:00:00:00:62:20:01"}
+  }
+}
